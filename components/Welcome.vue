@@ -5,7 +5,7 @@
     >
       <span class="block"
         >Welcome to the
-        <span class="text-yellow-500">Dad Jokes App 🤣</span></span
+        <span class="text-yellow-500">Dad Jokez App 🤣</span></span
       >
       <span class="block">Select an option to begin</span>
     </h2>
