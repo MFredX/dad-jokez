@@ -4,7 +4,7 @@ This web app uses "I can haz dad joke" API ( https://icanhazdadjoke.com/api ) to
 
 ## Functionality
 
-The App has the following features
+The App has the following features;
 
 1.  Fetch & display a random joke every 10 seconds
 
