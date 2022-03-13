@@ -1,22 +1,24 @@
 <template>
-  <div
-    class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8 bg-yellow-50"
-  >
-    <Welcome
-      @displayFetchRandomClick="displayFetchRandom"
-      @displaySearchClick="displaySearch"
-      @displayHistoryClick="displayHistory"
-    />
-    <div v-if="isfetchRandomOn">
-      <FetchRandom />
+  <body class="bg-yellow-50">
+    <div
+      class="max-w-7xl mx-auto overflow-visible text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
+    >
+      <Welcome
+        @displayFetchRandomClick="displayFetchRandom"
+        @displaySearchClick="displaySearch"
+        @displayHistoryClick="displayHistory"
+      />
+      <div v-if="isfetchRandomOn">
+        <FetchRandom />
+      </div>
+      <div v-if="isSearchOn">
+        <Search />
+      </div>
+      <div v-if="isHistroyOn">
+        <History />
+      </div>
     </div>
-    <div v-if="isSearchOn">
-      <Search />
-    </div>
-    <div v-if="isHistroyOn">
-      <History />
-    </div>
-  </div>
+  </body>
 </template>
 
 <script>
