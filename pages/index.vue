@@ -1,5 +1,5 @@
 <template>
-  <body class="bg-yellow-50">
+  <div class="bg-yellow-50">
     <div
       class="max-w-7xl mx-auto overflow-visible text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
     >
@@ -18,7 +18,7 @@
         <History />
       </div>
     </div>
-  </body>
+  </div>
 </template>
 
 <script>
