@@ -7,7 +7,7 @@
       @displaySearchClick="displaySearch"
     />
     <div v-if="isfetchRandomOn">
-      <Fetch-Random />
+      <FetchRandom />
     </div>
     <div v-if="isSearchOn">
       <Search />

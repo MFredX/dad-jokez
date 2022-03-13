@@ -1,13 +1,17 @@
 <template>
   <div class="bg-white w-3/5 shadow rounded-lg mx-auto my-10">
-    <SearchInput @searchJokesClicked="searchJokes($event)" class="px-4 py-6" />
-    <div>
+    <SearchInput @searchJokesClicked="searchJokes($event)" class="px-4 pt-6" />
+    <div class="relative p-4 lg:ml-5">
       <div v-if="isLoading">
         <Spinner />
       </div>
       <div v-else>
-        <div v-for="joke in jokes" :value="joke" :key="joke.id">
-          {{ joke.joke }}
+        <div
+          v-for="jokeEntry in jokesList"
+          :value="jokeEntry"
+          :key="jokeEntry.id"
+        >
+          <JokeCard class="my-5" :joke="jokeEntry.joke" />
         </div>
       </div>
     </div>
@@ -18,7 +22,7 @@
 export default {
   data: function () {
     return {
-      jokes: null,
+      jokesList: null,
       isLoading: false,
     };
   },
@@ -36,7 +40,7 @@ export default {
           },
         };
         let response = await this.$axios.get(URL, config);
-        this.jokes = response.data.results;
+        this.jokesList = response.data.results;
         this.isLoading = false;
       } catch (error) {
         console.log(error);
