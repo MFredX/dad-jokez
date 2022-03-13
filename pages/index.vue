@@ -5,12 +5,16 @@
     <Welcome
       @displayFetchRandomClick="displayFetchRandom"
       @displaySearchClick="displaySearch"
+      @displayHistoryClick="displayHistory"
     />
     <div v-if="isfetchRandomOn">
       <FetchRandom />
     </div>
     <div v-if="isSearchOn">
       <Search />
+    </div>
+    <div v-if="isHistroyOn">
+      <History />
     </div>
   </div>
 </template>
@@ -22,16 +26,24 @@ export default {
     return {
       isfetchRandomOn: false,
       isSearchOn: false,
+      isHistroyOn: false,
     };
   },
   methods: {
     displayFetchRandom() {
       this.isSearchOn = false;
+      this.isHistroyOn = false;
       this.isfetchRandomOn = true;
     },
     displaySearch() {
       this.isfetchRandomOn = false;
+      this.isHistroyOn = false;
       this.isSearchOn = true;
+    },
+    displayHistory() {
+      this.isfetchRandomOn = false;
+      this.isSearchOn = false;
+      this.isHistroyOn = true;
     },
   },
 };
