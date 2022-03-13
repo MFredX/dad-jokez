@@ -32,7 +32,7 @@ export default {
       try {
         const baseURL = "https://icanhazdadjoke.com/";
         let URL = `${baseURL}/search?term=${searchTerm}&limit=20&page=1`;
-        console.log(URL);
+        this.$store.commit("addToSearchHistory", searchTerm);
         const config = {
           headers: {
             Accept: "application/json",
