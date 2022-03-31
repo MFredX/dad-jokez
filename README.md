@@ -4,6 +4,8 @@ This web app uses "I can haz dad joke" API ( https://icanhazdadjoke.com/api ) to
 
 No tests were written for this verison of the app.
 
+Find a deployed version of this app here; ( https://mfredx-dad-jokez.herokuapp.com/ )
+
 ## Functionality
 
 The App has the following features;
