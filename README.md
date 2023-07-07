@@ -4,7 +4,10 @@ This web app uses "I can haz dad joke" API ( https://icanhazdadjoke.com/api ) to
 
 No tests were written for this verison of the app.
 
-Find a deployed version of this app here; ( https://mfredx-dad-jokez.herokuapp.com/ )
+This app was created as a part of skills assement for a role I applied in mid 2022.
+
+Find a deployed version of this app on https://dad-jokez-mfrex.netlify.app/ 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ef59773d-7202-4221-b7c0-779a17f846cb/deploy-status)](https://app.netlify.com/sites/dad-jokez-mfrex/deploys) 
 
 ## Functionality
 
