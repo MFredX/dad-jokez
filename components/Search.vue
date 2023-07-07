@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white w-3/5 shadow rounded-lg mx-auto my-10">
+  <div class="bg-yellow-50 w-3/5 shadow rounded-lg mx-auto my-10">
     <SearchInput @searchJokesClicked="searchJokes($event)" class="px-4 pt-6" />
     <div class="relative p-4 lg:ml-5">
       <div v-if="isLoading">

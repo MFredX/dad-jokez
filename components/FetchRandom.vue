@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white w-3/5 overflow-hidden shadow rounded-lg mx-auto my-10">
+  <div class="bg-yellow-50 w-3/5 overflow-hidden shadow rounded-lg mx-auto my-10">
     <div class="my-4 bg">
       <p class="text-l tracking-tight text-gray-900">
         A joke will be shown every 10 seconds, go easy on the laughs 😃

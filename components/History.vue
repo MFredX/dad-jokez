@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white w-3/5 shadow rounded-lg mx-auto my-10">
+  <div class="bg-yellow-50 w-3/5 shadow rounded-lg mx-auto my-10">
     <p class="text-l py-4 tracking-tight text-gray-900 border-b-2">
       These are the most recent searches😃
     </p>

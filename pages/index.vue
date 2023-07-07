@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-yellow-50">
+  <div class="bg-white">
     <div
       class="max-w-7xl mx-auto overflow-visible text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
     >
