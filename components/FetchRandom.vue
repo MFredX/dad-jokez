@@ -2,7 +2,7 @@
   <div class="bg-yellow-50 w-3/5 overflow-hidden shadow rounded-lg mx-auto my-10">
     <div class="my-4 bg">
       <p class="text-l tracking-tight text-gray-900">
-        A joke will be shown every 10 seconds, go easy on the laughs 😃
+        A joke will be shown every 30 seconds, go easy on the laughs 😃
       </p>
     </div>
     <div class="relative p-4 lg:ml-5">
@@ -46,7 +46,7 @@ export default {
       function () {
         this.getJokes();
       }.bind(this),
-      10000
+      30000
     );
   },
 };
